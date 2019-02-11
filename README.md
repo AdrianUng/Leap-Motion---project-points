@@ -5,7 +5,7 @@
 ## Packages used/required:
 * OpenCV version 3.4.2
 * NumPy version 1.15.4
-* Leap Motion Python API for Python (https://developer-archive.leapmotion.com/documentation/index.html)
+* [Leap Motion Python API for Python](https://developer-archive.leapmotion.com/documentation/index.html)
 * have Leap Motion SDK installed on machine
 * a webcam (in my case a Logitech Pro 9000)
 
@@ -13,12 +13,13 @@
 Using 3D coordinates relative to Leap Motion, project the points onto a webcam's 2D image plane.
 
 By running the script in *project_points.py* the following are achieved:
-* reading **frames** from the webcam
-* reading **coordinates** relative to the Leap Motion
-* projecting the 3D coordinates onto the webcam's image plane
+* reading **frames** from the webcam (Read [documentation](https://developer-archive.leapmotion.com/documentation/python/index.html) for more info)
+* reading **coordinates** relative to the Leap Motion (Read [documentation](https://developer-archive.leapmotion.com/documentation/python/index.html) for more info)
+* projecting the 3D coordinates onto the webcam's image plane [1]:
   * requires previously determined information -> the webcam's **Intrinsic Matrix** (easily obtainable by calibrating the camera)
   * requires **Extrinsic Matrix**, containing the **Rotation Matrix (R)**, as well as the **Translation Vector (t)**
   * in this case the **R** is considered the identity matrix of size 3. The **t** is also made up of zeros
+![](https://github.com/AdrianUng/Leap-Motion-project-points-onto-image/blob/master/projection_formula.PNG)
 * The setup is made up of a Leap Motion placed on top of the webcam:
 
 ![](https://github.com/AdrianUng/Leap-Motion-project-points-onto-image/blob/master/other%20imgs/setup.png)
@@ -42,6 +43,9 @@ By running the script in *project_points.py* the following are achieved:
   
 * To **EXIT** from the script, press '**q**' on your keyboard
 
+**REFERENCES**
+
+[1] Z. Zhang, “A Flexible New Technique for Camera Calibration (Technical Report),” IEEE Trans. Pattern Anal. Mach. Intell., vol. 22, no. 11, pp. 1330–1334, 2002.
 
   
 
