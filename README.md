@@ -28,6 +28,7 @@ By running the script in *project_points.py* the following are achieved:
 
 ![](https://github.com/AdrianUng/Leap-Motion-project-points-onto-image/blob/master/other%20imgs/axis_coordinates.png)
 
+* The offset between the camera's focal point ant the Leap Motion's center is 40mm. This is being compensated in the script...
 * The camera feed will be displayed *ONLY* if a hand is detected in front of the Leap Motion
 * This script was developed to save info to a destination, in this case considered *session0/id0_inst0/'*, where:
   * **session** corresponds to an acquisition session
