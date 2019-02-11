@@ -3,6 +3,7 @@
 ![](https://github.com/AdrianUng/Leap-Motion-project-points-onto-image/blob/master/other%20imgs/gif1.gif)
 
 ## Packages used/required:
+* Python 2.7.15
 * OpenCV version 3.4.2
 * NumPy version 1.15.4
 * [Leap Motion Python API for Python](https://developer-archive.leapmotion.com/documentation/index.html)
