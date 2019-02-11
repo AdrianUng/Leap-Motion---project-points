@@ -14,8 +14,8 @@
 Using 3D coordinates relative to Leap Motion, project the points onto a webcam's 2D image plane.
 
 By running the script in *project_points.py* the following are achieved:
-* reading **frames** from the webcam (Read [documentation](https://developer-archive.leapmotion.com/documentation/python/index.html) for more info)
-* reading **coordinates** relative to the Leap Motion (Read [documentation](https://developer-archive.leapmotion.com/documentation/python/index.html) for more info)
+* reading **frames** from the webcam (Read **SDK** [documentation](https://developer-archive.leapmotion.com/documentation/python/index.html) for more info)
+* reading **coordinates** relative to the Leap Motion (Read **SDK** [documentation](https://developer-archive.leapmotion.com/documentation/python/index.html) for more info)
 * projecting the 3D coordinates onto the webcam's image plane [1]:
   * requires previously determined information -> the webcam's **Intrinsic Matrix** (easily obtainable by calibrating the camera)
   * requires **Extrinsic Matrix**, containing the **Rotation Matrix (R)**, as well as the **Translation Vector (t)**
